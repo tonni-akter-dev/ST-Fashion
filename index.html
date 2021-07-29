@@ -1,0 +1,2548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/eac5f05cbf.js" crossorigin="anonymous"></script>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>ST-Fashion Website</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container fixed-top mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#hero-part"><span
+                        class="text-danger fw-bolder display-5 ms-2">Fashion</span> <span
+                        class="display-6 fw-bolder">World</span> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bolder fs-5 mt-3">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#hero-part"></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Product
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                <li><a class="dropdown-item fw-bolder" href="#virgin">Gown</a></li>
+                                <li><a class="dropdown-item fw-bolder" href="#divorce">saree</a></li>
+                                <li><a class="dropdown-item fw-bolder" href="#widow">punjabi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#blog">Contact Us</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#blog">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                        aria-describedby="basic-addon2">
+                                    <span class="input-group-text" id="basic-addon2 bg-danger"><i
+                                            class="fas fa-search"></i></span>
+                                </div>
+                            </a></li>
+                    </ul>
+                    <!-- offcanvas -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bolder fs-5 mt-2">
+                        <li>
+                            <button class="btn btn-white" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><a
+                                    class="position-relative text-white" href="#"><i
+                                        class="text-danger fa-2x fas fa-cart-plus"></i>
+                                    <span
+                                        class="position-absolute start-100 translate-middle badge rounded-pill bg-danger">0<span
+                                            class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>$00.00
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h2 id="offcanvasRightLabel" class="text-danger">Fashion Worls</h2>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <h3>
+                                        <i class="text-warning  far fa-grin-wink"></i>
+                                    </h3>
+                                    <button type="button" class="btn btn-danger w-100 mt-5">Shop Now</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn btn-white" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <i class="fa-2x text-danger fas fa-user-circle"></i>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h3 id="offcanvasRightLabel" class="fw-bolder">Profile</h3>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="btn btn-outline-danger w-100 text-start"><i class="fas fa-user"></i> My
+                                        Account</div>
+                                    <div class="btn mt-2 btn-outline-danger w-100 text-start"><i
+                                            class="fas fa-exclamation-triangle"></i> Notifications</div>
+                                    <div class="btn mt-2 btn-outline-danger w-100 text-start"><i
+                                            class="fas fa-envelope-open"></i> Message</div>
+                                    <div class="btn mt-2 btn-outline-danger w-100 text-start"><i
+                                            class="fas fa-shopping-cart"></i> Cart</div>
+                                    <div class="btn mt-2 btn-outline-danger w-100 text-start"><i
+                                            class="fas fa-heart"></i> Fevorite</div>
+                                    <div class="btn mt-2 btn-outline-danger w-100 text-start"><i
+                                            class="fab fa-jedi-order"></i> Order</div>
+                                    <div class="btn mt-2 btn-outline-danger w-100 text-start"><i
+                                            class="fas fa-gift"></i> Gift Card</div>
+                                    <div class="btn mt-2 btn-outline-danger w-100 text-start"><i
+                                            class="fas fa-sign-in-alt"></i> Sign-in</div>
+                                    <div class="btn mt-2 btn-outline-danger w-100 text-start"><i
+                                            class="fas fa-sign-out-alt"></i> Sign-up</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- carousal part starts here -->
+        <section id="hero-part" class="hero-part container mt-5 p-5">
+            <div class="row">
+                <div class="col-12 col-md-6 mt-5">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel"
+                        data-interval="2000" data-bs-pause="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="margin">
+                                    <h1 class="fw-bolder">Donut worry, be happy!!</h1><br>
+                                    <p>Share this special moment by letting everyone know your feelings through these
+                                        marriage quotes. Show your romantic side</p>
+                                    <a class="btn btn-outline-primary" href="#" role="button">Read More</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="margin">
+                                    <h1 class="fw-bolder">Marriage is a special event for everyone in their life!</h1>
+                                    <br>
+                                    <p>Cheeky Kid is a cybernaut who spends a lot of time browsing the web, grasping
+                                        infinite information, and reveling in entertainment and fun.</p>
+                                    <a class="btn btn-outline-primary" href="#" role="button">Read More</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="margin">
+                                    <h1 class="fw-bolder">Love may be blind but marriage is a real eye-opener!</h1><br>
+                                    <p>Cheeky Kid is a cybernaut who spends a lot of time browsing the web, grasping
+                                        infinite information, and reveling in entertainment and fun.</p>
+                                    <a class="btn btn-outline-primary" href="#" role="button">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-5">
+                    <div class="picture-part">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"
+                            data-interval="2000" data-bs-pause="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/carousal1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carousal2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carousal3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- start of time part -->
+        <div class="text-center d-flex justify-content-center"><iframe
+                src="https://free.timeanddate.com/clock/i7wpuqed/n940/fn7/fs20/tct/pct/ftb/th2" frameborder="0"
+                width="128" height="30" allowtransparency="true"></iframe>
+        </div>
+    </header>
+    <main>
+        <!-- sareee.. -->
+        <section class="container mt-5">
+            <h4 class="text-center fw-bold display-5 mb-5">SAREE</h4>
+            <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/jamdani-saree/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/jamdani-saree/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/jamdani-saree/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/jamdani-saree/4.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- see more -->
+        </section>
+        <div class="mt-5 mx-auto text-center">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                SeeMore...
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/jamdani-saree/16.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/jamdani-saree/1.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/jamdani-saree/2.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/jamdani-saree/8.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/jamdani-saree/15.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/jamdani-saree/10.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl mt-2">
+                                        <img src="images/jamdani-saree/14.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/jamdani-saree/14.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- boys punjabi section starts here -->
+        <section class="container mt-5">
+            <h4 class="text-center fw-bold display-5 mb-5"> Punjabi </h4>
+            <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/boys/5.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/boys/6.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/boys/7.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/boys/8.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- see more -->
+            <div class="mt-5 mx-auto text-center">
+                <!-- Button trigger modal -->
+                <a type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop1">
+                    SeeMore...
+            </a>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/boys/9.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/boys/10.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/boys/11.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/boys/12.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/boys/10.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/boys/11.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/boys/12.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/boys/13.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--boys punjabi section  Ends here -->
+
+      <!-- couple section starts here -->
+      <section class="container mt-5">
+        <h4 class="text-center fw-bold display-5 mb-5"> Couples </h4>
+        <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card border-0 shadow-2xl">
+                    <img src="images/couple/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Details.
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header fw-bold text-warning">
+                                        <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                            Ambroidary three
+                                            pis</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Quality: Good <br>
+                                        Brand:No Brand <br>
+                                        price:1550/= only
+                                        <h4 class="fw-bold">About this cloth</h4>
+                                        <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                            Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                            Machines. Quality Assurance</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 shadow-2xl">
+                    <img src="images/couple/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer d-flex justify-content-center">
+
+                        <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Details.
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header fw-bold text-warning">
+                                        <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                            Ambroidary three
+                                            pis</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Quality: Good <br>
+                                        Brand:No Brand <br>
+                                        price:1550/= only
+                                        <h4 class="fw-bold">About this cloth</h4>
+                                        <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                            Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                            Machines. Quality Assurance</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 shadow-2xl">
+                    <img src="images/couple/7.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer d-flex justify-content-center">
+
+                        <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Details.
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header fw-bold text-warning">
+                                        <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                            Ambroidary three
+                                            pis</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Quality: Good <br>
+                                        Brand:No Brand <br>
+                                        price:1550/= only
+                                        <h4 class="fw-bold">About this cloth</h4>
+                                        <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                            Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                            Machines. Quality Assurance</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 shadow-2xl">
+                    <img src="images/couple/6.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer d-flex justify-content-center">
+
+                        <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Details.
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header fw-bold text-warning">
+                                        <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                            Ambroidary three
+                                            pis</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Quality: Good <br>
+                                        Brand:No Brand <br>
+                                        price:1550/= only
+                                        <h4 class="fw-bold">About this cloth</h4>
+                                        <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                            Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                            Machines. Quality Assurance</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- see more -->
+        <div class="mt-5 mx-auto text-center">
+            <!-- Button trigger modal -->
+            <a type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop2">
+                SeeMore...
+        </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/couple/7.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/couple/8.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/couple/9.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/couple/10.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/couple/12.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/couple/13.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/couple/14.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 shadow-2xl">
+                                        <img src="images/couple/15.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- couple section ends here -->
+
+        <!-- jorjet ambroidary section starts here -->
+        <section class="container mt-5">
+            <h4 class="text-center fw-bold display-5 mb-5">JORJET <span class="text-warning">AMBROIDARY</span> </h4>
+            <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/hand-work-1/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/hand-work-1/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/hand-work-1/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-2xl">
+                        <img src="images/hand-work-1/4.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer d-flex justify-content-center">
+
+                            <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Details.
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-bold text-warning">
+                                            <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                                Ambroidary three
+                                                pis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quality: Good <br>
+                                            Brand:No Brand <br>
+                                            price:1550/= only
+                                            <h4 class="fw-bold">About this cloth</h4>
+                                            <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                                Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                                Machines. Quality Assurance</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- see more -->
+            <div class="mt-5 mx-auto text-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop3">
+                    SeeMore...
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/hand-work-1/2.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/hand-work-1/1.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/hand-work-1/3.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0 shadow-2xl">
+                                            <img src="images/hand-work-1/4.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <!-- jorjet ambroidary section ends here -->
+
+<!-- cover section starts here -->
+<section class="container mt-5">
+    <h4 class="text-center fw-bold display-5 mb-5">BOLPRINT <span class="text-warning">THREE PIS</span> </h4>
+    <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/cover/1.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/cover/2.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center"> 
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/cover/3.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/cover/4.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- see more -->
+</section>
+<!-- cover section ends here -->
+<!-- print three pis start here -->
+<section class="container mt-5">
+    <h4 class="text-center fw-bold display-5 mb-5">Print <span class="text-warning">AMBROIDARY</span> </h4>
+    <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/print-three-pis/1.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/print-three-pis/2.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/print-three-pis/3.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/print-three-pis/4.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- see more -->
+    <div class="mt-5 mx-auto text-center">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop4">
+            SeeMore...
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-three-pis/5.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-three-pis/6.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-three-pis/7.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-three-pis/8.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-three-pis/9.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-three-pis/10.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-three-pis/11.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-three-pis/12.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- print three pis ends here-->
+
+<!-- hand work three pix section starts here -->
+<section class="container mt-5">
+    <h4 class="text-center fw-bold display-5 mb-5"> Hand Work<span class="text-warning">Dress</span> </h4>
+    <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/hand-work-pis/1.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/hand-work-pis/2.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/hand-work-pis/3.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/hand-work-pis/4.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- see more -->
+    <div class="mt-5 mx-auto text-center">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop5">
+            SeeMore...
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/hand-work-pis/5.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/hand-work-pis/6.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/hand-work-pis/7.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/hand-work-pis/8.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- hand work three pix section ends here -->
+<!-- shari section starts here -->
+<section class="container mt-5">
+    <h4 class="text-center fw-bold display-5 mb-5">KATAN <span class="text-warning">Dress</span> </h4>
+    <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/shari/5.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/shari/6.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/shari/7.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/shari/8.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- see more -->
+    <div class="mt-5 mx-auto text-center">
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop6">
+            SeeMore...
+        </button>
+        <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/shari/1.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/shari/2.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/shari/3.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/shari/4.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- shari section ends here -->
+
+<!-- gown section starts here -->
+<section class="container mt-5">
+    <h4 class="text-center fw-bold display-5 mb-5">Fashion <span class="text-warning">GOWN</span> </h4>
+    <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/simple-gown/1.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/simple-gown/2.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/simple-gown/3.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/simple-gown/4.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- see more -->
+    <div class="mt-5 mx-auto text-center">
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop6">
+            SeeMore...
+        </button>
+        <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/shari/1.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/shari/2.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/shari/3.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/shari/4.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- gown section ends here -->
+<!-- gown section starts here -->
+<section class="container mt-5">
+    <h4 class="text-center fw-bold display-5 mb-5">Fashion <span class="text-warning">GOWN</span> </h4>
+    <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/print-punjabi/1.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/print-punjabi/2.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/print-punjabi/3.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 shadow-2xl">
+                <img src="images/print-punjabi/4.jpg" class="card-img-top" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Details.
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-warning">
+                                    <h5 class="modal-title fs-3 fw-bolder" id="exampleModalLabel ">Jorjet red
+                                        Ambroidary three
+                                        pis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Quality: Good <br>
+                                    Brand:No Brand <br>
+                                    price:1550/= only
+                                    <h4 class="fw-bold">About this cloth</h4>
+                                    <p>Leading Manufacturer Of Embroidered Georgette Fabric & Curtain Material.
+                                        Factory Direct. Eco-Friendly. With Advanced Computerized Embroidery
+                                        Machines. Quality Assurance</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- see more -->
+    <div class="mt-5 mx-auto text-center">
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop7">
+            SeeMore...
+        </button>
+        <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row row-cols-lg-4 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-punjabi/5.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-punjabi/6.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-punjabi/7.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 shadow-2xl">
+                                    <img src="images/print-punjabi/8.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- gown section ends here -->
+
+
+    <!-- contact section -->
+    <section class="margin-top container">
+        <div>
+          <h4 class="text-center text-success fs-3 pt-5">Contact Us</h4>
+          <h1 class="text-center fw-bold pb-5 title">Contact For Any Query</h1>
+          <div class="contact">
+            <div class="container bg-light p-5">
+              <div class="row align-items-center contact-information">
+                <div class="col-md-6 col-lg-3">
+                  <div class="contact-info">
+                    <div class="contact-icon ms-5">
+                      <i class="fa fa-2x fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                      <h3>Address</h3>
+                      <p>123 Street, NY, USA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="contact-info">
+                    <div class="contact-icon ms-5">
+                      <i class="fa fa-phone-alt fa-2x  "></i>
+                    </div>
+                    <div class="contact-text">
+                      <h3>Call Us</h3>
+                      <p>+012 345 6789</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="contact-info">
+                    <div class="contact-icon  ms-5">
+                      <i class="fa fa-envelope fa-2x"></i>
+                    </div>
+                    <div class="contact-text">
+                      <h3>Email Us</h3>
+                      <p>info@example.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="contact-info">
+                    <div class="contact-icon ms-5">
+                      <i class="fa fa-share fa-2x"></i>
+                    </div>
+                    <div class="contact-text">
+                      <h3>Follow Us</h3>
+                      <div class="contact-social">
+                        <a href="#"><i class="fab  fa-twitter"></i></a>
+                        <a href="#"><i class="fab  fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab  fa-youtube"></i></a>
+                        <a href="#"><i class="fab  fa-instagram"></i></a>
+                        <a href="#"><i class="fab  fa-linkedin-in"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- map and contact form starts here -->
+            <div class="row mt-5">
+              <div class="col-lg-6 col-sm-12 contact-form">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14602.249416641494!2d90.34659825!3d23.798593999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1627122256602!5m2!1sen!2sbd"
+                  width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              <div class="col-lg-6 col-sm-12 px-3">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput"><i class="fas fa-user prefix"></i> Name</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword"><i class="fas fa-envelope prefix"></i> Email</label>
+                </div> <br>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" placeholder="Message" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
+                </div>
+                <button class="btn btn-warning btn-lg">Send Message</button>
+              </div>
+            </div>
+      </section>
+ 
+  
+    <section class="information-part margin-top text-white">
+        <div class="container">
+        <div class="row mt-5 pt-5">
+          <div class="text-start col-12 col-sm-12 col-md-6 col-lg-3 p-2">
+            <h3>Fashion World<span class="text-danger">.</span></h3><br>
+            <p>A108 Adam Streetb<br>
+              New York, NY 535022<br>
+              United States</p><br>
+              <p>Phone: +1 5589 55488 55<br>
+                Email: info@example.com</p>
+          </div>
+          <div class="text-start col-12 col-sm-12 col-md-6 col-lg-3 p-2">
+            <h3>Useful Links</h3><br>
+            <p><a class="text-decoration-none text-white" href=""><i class="fas fa-angle-right"></i> Home</a><br></p>
+            <p><a class="text-decoration-none text-white" href=""><i class="fas fa-angle-right"></i> About Us</a><br></p>
+            <p><a class="text-decoration-none text-white" href=""><i class="fas fa-angle-right"></i> Services</a><br></p>
+            <p><a class="text-decoration-none text-white" href=""><i class="fas fa-angle-right"></i> Terms of service</a><br></p>
+            <p><a class="text-decoration-none text-white" href=""><i class="fas fa-angle-right"></i> Privacy policy</a><br></p>
+          </div>
+          <div class="text-start col-12 col-sm-12 col-md-6 col-lg-3 p-2">
+            <h3>Our Branch</h3><br>
+            <p><a class="text-decoration-none text-white" href=""><i class="fas fa-angle-right"></i> Soudi Arab</a><br></p>
+            <p><a class="text-decoration-none text-white" href=""><i class="fas fa-angle-right"></i>America</a><br></p>
+            <p><a class="text-decoration-none text-white" href=""><i class="fas fa-angle-right"></i>Switzerland</a><br></p>
+            <p><a class="text-decoration-none text-white" href=""><i class="fas fa-angle-right"></i>Kuet<br></p>
+            <p><a class="text-decoration-none text-white" href=""><i class="fas fa-angle-right"></i>China</a><br></p>
+          </div>
+          <div class="text-start col-12 col-sm-12 col-md-6 col-lg-3 p-2">
+            <h3>Join Our Newsletter</h3><br>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna<br></p><br>
+            <p><div class="input-group mb-3">
+              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+              <button class="btn bg-danger text-white" type="button">Subscribe</button>
+            </div><br></p>
+          </div>
+        </div>
+      </div>
+      </section>
+  </main>
+  <footer class="text-white p-4">
+    <div class="container d-flex justify-content-between">
+      <div>
+        &copy; All Rights Reserved<br>Designed by <span class="text-danger">Tonni Akter</span>
+      </div>
+      <div>
+        <i class="fa-2x ms-2 fab fa-facebook-square"></i>
+        <i class="fa-2x ms-2 fab fa-instagram-square"></i>
+        <i class="fa-2x ms-2 fab fa-snapchat-square"></i>
+        <i class="fa-2x ms-2 fab fa-twitter-square"></i>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

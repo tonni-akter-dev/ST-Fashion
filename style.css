@@ -1,0 +1,48 @@
+.hero-part{
+    border-radius: 30px;
+    color: white;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 6%, rgba(0,212,255,1) 100%);
+  }
+  .picture-part{
+    overflow: hidden;
+      border-top-left-radius: 30%;
+    }
+    .margin-top{
+        margin-top: 80px;
+    }
+
+    /* cards..... */
+    .card{
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+          transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+      cursor: pointer;
+    }
+    
+    .card img:hover{
+         transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+    
+    /* contact-form */
+ .contact-form iframe {
+    width: 100%;
+    height: 380px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+  }
+  .social-icon{
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+.information-part{
+    background: #1b1b1b;
+}
+  footer{
+    background: black;
+
+}
